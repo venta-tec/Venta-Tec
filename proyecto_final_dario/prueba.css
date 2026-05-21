@@ -1,0 +1,187 @@
+:root {
+  --azul-oscuro: #0d2b66;
+  --azul: #1e5ed8;
+  --azul-claro: #2f7cf6;
+  --fondo: #21a727;
+  --texto: #1e2a3a;
+  --blanco: #ffffff;
+  --gris: #6b7280;
+  --borde: #e5e7eb;
+  --rojo: #d7263d;  
+}
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--fondo);
+  color: var(--texto);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* NAVBAR */
+.navbar {
+  background: linear-gradient(90deg, #083ba1, #173d8f);
+  color: var(--blanco);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 14px 0;
+}
+
+.menu {
+  display: flex;
+  gap: 22px;
+  list-style: none;
+}
+
+.menu a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.15);
+  padding: 8px 12px;
+  border-radius: 999px;
+}
+
+.search-box input {
+  background: black;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #1c4fb5, #5ea1ff);
+  color: white;
+  padding: 60px 0;
+}
+
+.hero-image {
+  min-height: 300px;
+  border: 2px dashed rgba(255,255,255,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+/* BENEFITS */
+.benefits {
+  background: white;
+  margin-top: -20px;
+  border-radius: 18px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.benefit {
+  padding: 20px;
+  text-align: center;
+}
+
+/* PRODUCTS */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.card-image {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef3fb;
+}
+
+.card-body {
+  color:rgb(9, 133, 71);
+  padding: 16px;
+  text-align: center;
+}
+
+.price {
+  color: var(--azul);
+  font-weight: bold;
+}
+
+/* OFFERS */
+.offers-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 18px;
+}
+
+.offers-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.offer-card {
+  background: white;
+  border-radius: 18px;
+}
+
+/* BRANDS */
+.brands {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.brand-box {
+  background: white;
+  padding: 18px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background: #0b1d44;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
